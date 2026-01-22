@@ -1,5 +1,5 @@
 import QuizSetCard from "./quizSetCard.tsx";
-
+import './css/homePage.css'
 const quizSets = [
     {id: 1, title: 'React basic', total: 10},
     {id: 2, title: 'TypeScript basic', total: 8},

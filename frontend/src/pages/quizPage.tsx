@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { quizzes } from '../data/quizzes';
 import QuizCard from "../components/quizCard.tsx";
 import Timer from "../components/timer.tsx";
-
+import './css/quizPage.css'
 const QuizPage: React.FC = () => {
     const { quizId } = useParams<{ quizId: string }>();
     const quiz = quizzes.find(q => q.id === Number(quizId));
@@ -11,7 +11,7 @@ const QuizPage: React.FC = () => {
     const [current, setCurrent] = useState(0);
     const [score, setScore] = useState(0);
 
-    if (!quiz) return <h2>❌ Không tìm thấy quiz</h2>;
+    if (!quiz) return <h2>❌ Quiz can not be found</h2>;
 
     const handleConfirm = (isCorrect: boolean) => {
         if (isCorrect) setScore(s => s + 1);
@@ -24,17 +24,17 @@ const QuizPage: React.FC = () => {
     if (current >= quiz.questions.length) {
         return (
             <div style={{ textAlign: 'center' }}>
-                <h2>🎉 Hoàn thành: {quiz.title}</h2>
+                <h2>🎉 Complete: {quiz.title}</h2>
                 <p>Điểm: {score} / {quiz.questions.length}</p>
             </div>
         );
     }
 
     return (
-        <div>
+        <div className="quiz-page">
             <Timer total={60} onTimeUp={() => setCurrent(quiz.questions.length)} />
 
-            <p>
+            <p className="quiz-progress">
                 Câu {current + 1} / {quiz.questions.length}
             </p>
 
@@ -45,6 +45,7 @@ const QuizPage: React.FC = () => {
             />
         </div>
     );
+
 };
 
 export default QuizPage;
