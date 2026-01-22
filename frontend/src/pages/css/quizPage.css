@@ -1,32 +1,19 @@
 /* Quiz Page */
 .quiz-page {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 0px auto;
     padding: 20px;
 }
 
 /* Progress text */
 .quiz-progress {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     font-weight: 600;
     margin: 10px 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
-
-/* Result screen */
-.quiz-result {
-    background: white;
-    border-radius: 20px;
-    padding: 60px 40px;
-    max-width: 600px;
-    margin: 50px auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation: fadeIn 0.4s ease;
-}
-
 .quiz-result h2 {
     font-size: 2.2rem;
     color: #667eea;
@@ -38,3 +25,19 @@
     color: #333;
     font-weight: 600;
 }
+.quiz-status {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.button-home{
+    margin: 20px auto;
+}
+

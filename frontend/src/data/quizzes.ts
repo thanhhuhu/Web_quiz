@@ -2,6 +2,7 @@ export const quizzes = [
     {
         id: 1,
         title: 'React basic',
+        time: '10 minutes',
         questions: [
             {
                 question: 'React là gì?',
@@ -82,6 +83,7 @@ export const quizzes = [
     {
         id: 2,
         title: 'TypeScript basic',
+        time: '10 minutes',
         questions: [
             {
                 question: 'TypeScript là gì?',
@@ -162,6 +164,7 @@ export const quizzes = [
     {
         id: 3,
         title: 'NodeJS basic',
+        time: '10 minutes',
         questions: [
             {
                 question: 'NodeJS chạy ở đâu?',
@@ -238,5 +241,265 @@ export const quizzes = [
                 answer: 0
             }
         ]
+    },
+    {
+        id: 4,
+        title: 'JavaScript basic',
+        time: '10 minutes',
+        questions: [
+            {
+                question: 'JavaScript là gì?',
+                options: ['Ngôn ngữ lập trình', 'Framework', 'Database'],
+                answer: 0
+            },
+            {
+                question: 'JavaScript chạy chủ yếu ở đâu?',
+                options: ['Browser', 'Database', 'Compiler'],
+                answer: 0
+            },
+            {
+                question: 'Khai báo biến bằng từ khóa nào?',
+                options: ['var', 'let', 'const'],
+                answer: 0
+            },
+            {
+                question: 'let khác var ở điểm nào?',
+                options: [
+                    'Phạm vi block',
+                    'Chạy nhanh hơn',
+                    'Không dùng được'
+                ],
+                answer: 0
+            },
+            {
+                question: 'const dùng khi nào?',
+                options: [
+                    'Khi giá trị không đổi',
+                    'Khi giá trị thay đổi',
+                    'Khi cần loop'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Kiểu dữ liệu nào là primitive?',
+                options: ['number', 'object', 'array'],
+                answer: 0
+            },
+            {
+                question: '=== khác == ở điểm nào?',
+                options: [
+                    'So sánh cả kiểu và giá trị',
+                    'Chỉ so sánh giá trị',
+                    'Không khác nhau'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Arrow function có cú pháp nào?',
+                options: ['=>', '->', '==>'],
+                answer: 0
+            },
+            {
+                question: 'Array dùng để làm gì?',
+                options: [
+                    'Lưu nhiều giá trị',
+                    'Lưu một giá trị',
+                    'Lưu object'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Promise dùng để xử lý gì?',
+                options: [
+                    'Bất đồng bộ',
+                    'Vòng lặp',
+                    'Biến'
+                ],
+                answer: 0
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: 'HTML & CSS basic',
+        time: '10 minutes',
+        questions: [
+            {
+                question: 'HTML là viết tắt của?',
+                options: [
+                    'HyperText Markup Language',
+                    'HighText Machine Language',
+                    'Hyper Tool Language'
+                ],
+                answer: 0
+            },
+            {
+                question: 'HTML dùng để làm gì?',
+                options: [
+                    'Xây dựng cấu trúc trang web',
+                    'Xử lý logic',
+                    'Kết nối database'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Thẻ nào tạo link?',
+                options: ['<a>', '<link>', '<href>'],
+                answer: 0
+            },
+            {
+                question: 'CSS dùng để làm gì?',
+                options: [
+                    'Trang trí giao diện',
+                    'Xử lý backend',
+                    'Lưu dữ liệu'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Thuộc tính nào đổi màu chữ?',
+                options: ['color', 'background', 'font-size'],
+                answer: 0
+            },
+            {
+                question: 'display: flex dùng để?',
+                options: [
+                    'Tạo layout linh hoạt',
+                    'Ẩn phần tử',
+                    'Load ảnh'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Position nào bám theo màn hình?',
+                options: ['fixed', 'absolute', 'relative'],
+                answer: 0
+            },
+            {
+                question: 'margin dùng để?',
+                options: [
+                    'Tạo khoảng cách bên ngoài',
+                    'Tạo viền',
+                    'Đổi màu'
+                ],
+                answer: 0
+            },
+            {
+                question: 'padding dùng để?',
+                options: [
+                    'Tạo khoảng cách bên trong',
+                    'Căn giữa',
+                    'Ẩn nội dung'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Responsive là gì?',
+                options: [
+                    'Giao diện phù hợp nhiều màn hình',
+                    'Trang web tải nhanh',
+                    'Web dùng server'
+                ],
+                answer: 0
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: 'Git & GitHub basic',
+        time: '10 minutes',
+        questions: [
+            {
+                question: 'Git là gì?',
+                options: [
+                    'Hệ thống quản lý phiên bản',
+                    'Framework',
+                    'IDE'
+                ],
+                answer: 0
+            },
+            {
+                question: 'GitHub dùng để làm gì?',
+                options: [
+                    'Lưu trữ source code',
+                    'Chạy backend',
+                    'Viết CSS'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Lệnh git init dùng để?',
+                options: [
+                    'Khởi tạo repository',
+                    'Push code',
+                    'Clone project'
+                ],
+                answer: 0
+            },
+            {
+                question: 'git status dùng để?',
+                options: [
+                    'Xem trạng thái file',
+                    'Xem log',
+                    'Xóa branch'
+                ],
+                answer: 0
+            },
+            {
+                question: 'git add . dùng để?',
+                options: [
+                    'Đưa file vào staging',
+                    'Commit code',
+                    'Push code'
+                ],
+                answer: 0
+            },
+            {
+                question: 'git commit dùng để?',
+                options: [
+                    'Lưu snapshot code',
+                    'Xóa file',
+                    'Tạo repo'
+                ],
+                answer: 0
+            },
+            {
+                question: 'git push dùng để?',
+                options: [
+                    'Đẩy code lên remote',
+                    'Lấy code về',
+                    'Tạo branch'
+                ],
+                answer: 0
+            },
+            {
+                question: 'git pull dùng để?',
+                options: [
+                    'Cập nhật code từ remote',
+                    'Xóa commit',
+                    'Reset code'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Branch dùng để?',
+                options: [
+                    'Phát triển tính năng riêng',
+                    'Lưu database',
+                    'Build project'
+                ],
+                answer: 0
+            },
+            {
+                question: 'Merge dùng để?',
+                options: [
+                    'Gộp các branch',
+                    'Xóa repo',
+                    'Đổi tên file'
+                ],
+                answer: 0
+            }
+        ]
     }
 ];
+
