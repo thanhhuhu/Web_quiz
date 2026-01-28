@@ -1,18 +1,23 @@
-import {Link} from "react-router-dom";
-import './css/quizSetCard.css'
-type Props = {
-    id : number,
-    title :string,
-    total:number,
-    time: string,
+import { useNavigate } from "react-router-dom";
+import './css/homePage.css'
+interface Props {
+    id: string;
+    title: string;
+    total: number;
+    time: string;
 }
-const QuizSetCard = ({id, title, total, time}: Props) => {
+
+const QuizSetCard: React.FC<Props> = ({ id, title, total, time }) => {
+    const navigate = useNavigate();
+
     return (
-        <Link to={`/quiz/${id}`} className="quiz-set-card">
+        <div className="quiz-set-card" onClick={() => navigate(`/quiz/${id}`)}>
             <h3>{title}</h3>
             <p>{total} questions</p>
             <p>{time}</p>
-        </Link>
-    )
-}
+            <div className={"start-btn"}>Start</div>
+        </div>
+    );
+};
+
 export default QuizSetCard;

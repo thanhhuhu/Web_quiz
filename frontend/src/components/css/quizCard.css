@@ -1,4 +1,5 @@
-.quiz-card {
+/*//quizCard.tsx*/
+.question-card {
     background: white;
     border-radius: 20px;
     padding: 40px;
@@ -8,12 +9,13 @@
     animation: fadeIn 0.5s ease;
 }
 
-.quiz-card h2 {
+.question-card h2 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 30px;
     line-height: 1.4;
 }
+
 
 .option {
     width: 100%;

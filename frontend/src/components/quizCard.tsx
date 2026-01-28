@@ -30,7 +30,7 @@ const QuizCard: React.FC<Props> = ({ data, onConfirm, onNext }) => {
     };
 
     return (
-        <div className="quiz-card">
+        <div className="question-card">
             <h2>{data.question}</h2>
 
             {data.options.map((opt, i) => {
